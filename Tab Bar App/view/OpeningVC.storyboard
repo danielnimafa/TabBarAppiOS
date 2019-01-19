@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Gm-kh-E5u">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--OpeningVC-->
+        <scene sceneID="R2o-T4-lih">
+            <objects>
+                <viewController id="7Gm-kh-E5u" customClass="OpeningVC" customModule="Tab_Bar_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hyr-2g-fGt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pv-to-mXf">
+                                <rect key="frame" x="94" y="322" width="187" height="72"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="187" id="Hhk-tn-kc3"/>
+                                    <constraint firstAttribute="height" constant="72" id="gna-u9-5ub"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
+                                <state key="normal" title="Tap To Enter">
+                                    <color key="titleColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterBtnPressed:" destination="7Gm-kh-E5u" eventType="touchUpInside" id="lcv-Cn-FTf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="w7w-fS-a9H" firstAttribute="bottom" secondItem="7pv-to-mXf" secondAttribute="bottom" constant="273" id="fKo-Ow-lke"/>
+                            <constraint firstItem="7pv-to-mXf" firstAttribute="centerX" secondItem="hyr-2g-fGt" secondAttribute="centerX" id="ifO-qJ-aDq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="w7w-fS-a9H"/>
+                    </view>
+                    <connections>
+                        <outlet property="tombol" destination="7pv-to-mXf" id="u0p-YC-cZ1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jKm-Q5-gR6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="197.59999999999999" y="173.16341829085459"/>
+        </scene>
+    </scenes>
+</document>
